@@ -11,7 +11,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<main class="two-column-grid two-column-grid-equal">
 			<section>
-				<h1>Raconteur</h1>
+				<h1>raconteur</h1>
 				<p>
 					Artist management and booking agency based in Cape Town, South Africa
 				</p>
@@ -72,6 +72,10 @@ body{
 				height: 100vh;
 				padding-inline: 5rem;
 				gap: 15rem !important;
+
+				@media (max-width: 768px) {
+  				gap: 2rem !important;
+				}
 			}
 
 			p {
