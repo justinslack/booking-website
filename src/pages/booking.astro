@@ -57,18 +57,6 @@ const artists = await getCollection('artists');
   </div>
 </form>
 
-<script>
-  // Read the URL search params and select the artist if available
-  const urlParams = new URLSearchParams(window.location.search);
-  const selectedArtist = urlParams.get('artist');
-  const artistSelect = document.getElementById('artist');
-
-  if (selectedArtist) {
-    // Pre-select the artist based on the URL parameter
-    artistSelect.value = selectedArtist;
-  }
-</script>
-
 </Layout>
 
 <style>
